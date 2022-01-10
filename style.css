@@ -1,8 +1,35 @@
 *{
+    text-align: center;
+    color: white;
 
 }
 .container{
     display: flex;
     flex-direction: column;
-    width: 50vh;
+    width: 70vh;
+    margin-left: 35%;
+    background-color: rgb(3, 70, 3)
+    
+    
+}
+#heading{
+  white-space: nowrap;
+  padding-top: 10px;
+}
+
+#bill-amount{
+    padding: 7px;
+    margin:7px;
+    color:black;
+}
+#cash-given{
+    padding: 7px;
+    margin: 7px;
+    color: black;
+}
+
+#btn{
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: rgb(4, 109, 36);
 }
