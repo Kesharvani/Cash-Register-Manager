@@ -9,6 +9,7 @@ const notes = [2000 , 500 , 100 , 20 , 10 , 5 , 1];
 buttonCheck.addEventListener("click", function ValidateBillandCashAmount() {
     
     hidmessage();
+    clearTable();
     if (Number(billAmount.value) > 0){
 
         if (Number(cashGiven.value) > Number(billAmount.value))
@@ -46,4 +47,12 @@ function showMessage(msg)
 function hidmessage()
 {
     errorMessage.style.display="none";
+}
+
+function clearTable()
+{
+    for(let j=0;j<notes.length;j++)
+    {
+        notesElement[j].innerText="";
+    }
 }
