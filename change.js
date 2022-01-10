@@ -13,14 +13,10 @@ buttonCheck.addEventListener("click", function ValidateBillandCashAmount() {
 
         if (Number(cashGiven.value) > Number(billAmount.value))
         {
-            console.log(cashGiven.value);
-            console.log(cashGiven.value > billAmount.value);
             const toBeReturnAmount = cashGiven.value - billAmount.value;
            exchangeMoney(toBeReturnAmount);
         } 
         else {
-            console.log(cashGiven.value);
-            console.log(cashGiven.value > billAmount.value);
             showMessage("Do you wanna wash plates!");
         }
     }
